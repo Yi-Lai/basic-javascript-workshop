@@ -49,5 +49,8 @@ function check(str,num){
 
 check("string",3);
 
-
+//Write a function that uses a for loop to print the numbers from 1 to 10 inclusively.
+for(var i=1;i <= 10; i++){
+console.log(i);
+}
 
