@@ -115,3 +115,13 @@ function titleCase(str) {
     return str.join(' ');
 }
 titleCase("This is another long sentence");
+
+//Write a function that takes an array and returns the largest number of the array.
+
+var points = [500, 130, 12, -30]; 
+points.sort(function(a, b){
+    return a - b
+});
+return points[
+    points.length-1
+];
