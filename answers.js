@@ -60,7 +60,14 @@ var one_to_ten = [
     "one", "two", "three", "four", "five",
     "six", "seven", "eight", "nine", "ten",
 ];
-for (var i = 0; i <= 9; i++) {
+for (var i = 0; i <one_to_ten.length; i++) {
     console.log(one_to_ten[i]);
 }
 
+//Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, but for each number, print it that many number of times:
+for (var i = 1; i <= 10; i++){
+    for(var x=1 ; x<= i;x++){
+        console.log(i);
+    }
+    
+}
