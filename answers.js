@@ -60,29 +60,48 @@ var one_to_ten = [
     "one", "two", "three", "four", "five",
     "six", "seven", "eight", "nine", "ten",
 ];
-for (var i = 0; i <one_to_ten.length; i++) {
+for (var i = 0; i < one_to_ten.length; i++) {
     console.log(one_to_ten[i]);
 }
 
 //Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, but for each number, print it that many number of times:
-for (var i = 1; i <= 10; i++){
-    for(var x=1 ; x<= i;x++){
+for (var i = 1; i <= 10; i++) {
+    for (var x = 1; x <= i; x++) {
         console.log(i);
     }
 }
 //Write a function that takes a string, and returns the reverse of that string.
 function reverse(s) {
-  return s.split('').reverse().join('');
+    return s.split('').reverse().join('');
 };
 console.log(reverse("this is a sentence"));
 //had to google for this one
 
 //Write a function that takes a number and returns the factorial of a number.
 var factorial = function(number) {
-  if (number <= 0) { 
-    return 1;
-  } else { 
-    return (number * factorial(number - 1));
-  }
+    if (number <= 0) {
+        return 1;
+    }
+    else {
+        return (number * factorial(number - 1));
+    }
 };
 console.log(factorial(6)); // IDE crashes when I enter negative number, so I replaced it with 1. 
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word;
+    for (var i = 0; i < str.length ; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    console.log(word);
+}
+
+longestWord("This is short sentence");
+longestWord("This is a reallyreally long sentence");
