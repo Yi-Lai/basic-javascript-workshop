@@ -16,3 +16,9 @@ function add(a,b){
 }
 console.log(add("tree",2));//it attaches the string to the number
 
+//Write a function that takes two numbers and multiplies them together. 
+function mutiply(x,y){
+    return x*y;
+}
+console.log(mutiply("rabbit",10));//NaN is shown when a string replaces the number.
+
