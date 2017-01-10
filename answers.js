@@ -94,7 +94,7 @@ function longestWord(string) {
     var str = string.split(" ");
     var longest = 0;
     var word;
-    for (var i = 0; i < str.length ; i++) {
+    for (var i = 0; i < str.length; i++) {
         if (longest < str[i].length) {
             longest = str[i].length;
             word = str[i];
@@ -105,3 +105,13 @@ function longestWord(string) {
 
 longestWord("This is short sentence");
 longestWord("This is a reallyreally long sentence");
+
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized.
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+}
+titleCase("This is another long sentence");
