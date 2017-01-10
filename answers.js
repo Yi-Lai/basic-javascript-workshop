@@ -76,3 +76,13 @@ function reverse(s) {
 };
 console.log(reverse("this is a sentence"));
 //had to google for this one
+
+//Write a function that takes a number and returns the factorial of a number.
+var factorial = function(number) {
+  if (number <= 0) { 
+    return 1;
+  } else { 
+    return (number * factorial(number - 1));
+  }
+};
+console.log(factorial(6)); // IDE crashes when I enter negative number, so I replaced it with 1. 
