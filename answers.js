@@ -23,7 +23,7 @@ function mutiply(x, y) {
 console.log(mutiply("rabbit", 10)); //NaN is shown when a string replaces the number.
 
 //Write a function that takes two numbers and a string.
-function number(a, b ,c) {
+function number(a, b, c) {
     if (c === "add") {
         return a + b;
     }
@@ -38,19 +38,29 @@ function number(a, b ,c) {
     }
     else {
         return 0
-    }}
-    console.log(number(3,2,"add"))
-    console.log(number(10,3,"subtract"))
+    }
+}
+console.log(number(3, 2, "add"))
+console.log(number(10, 3, "subtract"))
 
 //Write a function that takes a string and a number, and returns the string repeated that many number of times. 
-function check(str,num){
-        return str.repeat(num);
-    }
+function check(str, num) {
+    return str.repeat(num);
+}
 
-check("string",3);
+check("string", 3);
 
 //Write a function that uses a for loop to print the numbers from 1 to 10 inclusively.
-for(var i=1;i <= 10; i++){
-console.log(i);
+for (var i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+//Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, but as words ("one", "two", ...). 
+var one_to_ten = [
+    "one", "two", "three", "four", "five",
+    "six", "seven", "eight", "nine", "ten",
+];
+for (var i = 0; i <= 9; i++) {
+    console.log(one_to_ten[i]);
 }
 
