@@ -10,3 +10,9 @@ console.log(name[5]);
 var things = ["line",10];
 console.log (things[1]);
 
+//Write a function that takes two numbers and adds them together.
+function add(a,b){
+    return a + b ; 
+}
+console.log(add("tree",2));//it attaches the string to the number
+
