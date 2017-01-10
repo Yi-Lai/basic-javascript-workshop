@@ -42,3 +42,12 @@ function number(a, b ,c) {
     console.log(number(3,2,"add"))
     console.log(number(10,3,"subtract"))
 
+//Write a function that takes a string and a number, and returns the string repeated that many number of times. 
+function check(str,num){
+        return str.repeat(num);
+    }
+
+check("string",3);
+
+
+
