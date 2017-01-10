@@ -69,5 +69,10 @@ for (var i = 1; i <= 10; i++){
     for(var x=1 ; x<= i;x++){
         console.log(i);
     }
-    
 }
+//Write a function that takes a string, and returns the reverse of that string.
+function reverse(s) {
+  return s.split('').reverse().join('');
+};
+console.log(reverse("this is a sentence"));
+//had to google for this one
