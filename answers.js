@@ -7,18 +7,38 @@ var name = "orange";
 console.log(name[5]);
 
 //Write a function that takes a string and a number, and returns the character at the position represented by the number.
-var things = ["line",10];
-console.log (things[1]);
+var things = ["line", 10];
+console.log(things[1]);
 
 //Write a function that takes two numbers and adds them together.
-function add(a,b){
-    return a + b ; 
+function add(a, b) {
+    return a + b;
 }
-console.log(add("tree",2));//it attaches the string to the number
+console.log(add("tree", 2)); //it attaches the string to the number
 
 //Write a function that takes two numbers and multiplies them together. 
-function mutiply(x,y){
-    return x*y;
+function mutiply(x, y) {
+    return x * y;
 }
-console.log(mutiply("rabbit",10));//NaN is shown when a string replaces the number.
+console.log(mutiply("rabbit", 10)); //NaN is shown when a string replaces the number.
+
+//Write a function that takes two numbers and a string.
+function number(a, b ,c) {
+    if (c === "add") {
+        return a + b;
+    }
+    else if (c === "subtract") {
+        return a - b;
+    }
+    else if (c === "mult") {
+        return a * b;
+    }
+    else if (c === "div") {
+        return a / b;
+    }
+    else {
+        return 0
+    }}
+    console.log(number(3,2,"add"))
+    console.log(number(10,3,"subtract"))
 
