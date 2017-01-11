@@ -120,8 +120,21 @@ titleCase("This is another long sentence");
 
 var points = [500, 130, 12, -30]; 
 points.sort(function(a, b){
-    return a - b
+    return a - b;
 });
 return points[
     points.length-1
 ];
+
+//Write a function that takes an array, and returns a filtered array.
+var arr = [ 12, "coco", 5, false, NaN, undefined, "pizza", null, 7];
+
+function test(initialArr) {
+   return initialArr.filter(function(theCurrentElement){
+       return Boolean(theCurrentElement)
+   })  
+       
+}
+console.log(test(arr));
+console.log( test([4, 5, 'banana', -1, false]) );
+
