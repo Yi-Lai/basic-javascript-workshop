@@ -138,3 +138,11 @@ function test(initialArr) {
 console.log(test(arr));
 console.log( test([4, 5, 'banana', -1, false]) );
 
+//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+var sum = [40,20,1,56].reduce(add, 0);
+
+function add(a, b) {
+    return a + b;
+}
+
+return sum;
